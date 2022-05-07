@@ -1,6 +1,7 @@
 package com.example.ej01clase07
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -30,5 +31,25 @@ class LastFragment : Fragment() {
             navController.navigate(R.id.action_lastFragment_to_initialFragment)
         }
 
+        binding.btnaccion.setOnClickListener{
+
+            val prueba = RandomNumber()
+prueba.generarSecuencia()
+
+
+
+            /*val prueba = RandomNumber()
+
+
+            Log.i("Random",prueba.valorRandom(1..10).toString())
+            Log.i("Random",prueba.valorRandom(11..20).toString())
+            Log.i("Random",prueba.valorRandom(21..30).toString())
+            Log.i("Random",prueba.valorRandom(31..40).toString())
+            Log.i("Random",prueba.valorRandom(41..50).toString())
+        */}
+
     }
+
+
+
 }
